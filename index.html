@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fanáticos - Botines de Fútbol</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #e6f3e6;
+      color: #333;
+    }
+    header {
+      background-color: #006400;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+    header img {
+      height: 60px;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1600132806370-dfea7b2c6f48') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px black;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .section {
+      padding: 2rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+    .product {
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .btn {
+      background: #006400;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+    footer {
+      background: #004d00;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Fanáticos">
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#productos">Productos</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#carrito"><i class="fas fa-shopping-cart"></i></a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    Bienvenido a Fanáticos
+  </section>
+
+  <section class="section" id="productos">
+    <h2>Botines Destacados</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/200x150" alt="Botín 1">
+        <h3>Botín Clásico</h3>
+        <p>$15.000</p>
+        <button class="btn">Agregar al carrito</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/200x150" alt="Botín 2">
+        <h3>Botín Profesional</h3>
+        <p>$25.000</p>
+        <button class="btn">Agregar al carrito</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>Fanáticos nace con la pasión por el fútbol. Nos dedicamos a ofrecer botines de alta calidad a precios accesibles para todos los verdaderos hinchas del deporte rey.</p>
+  </section>
+
+  <section class="section" id="contacto">
+    <h2>Contacto</h2>
+    <p>Email: contacto@fanaticos.com</p>
+    <p>Instagram: @fanaticosfutbol</p>
+    <p>WhatsApp: +54 9 11 1234 5678</p>
+  </section>
+
+  <footer>
+    © 2025 Fanáticos. Todos los derechos reservados.
+  </footer>
+</body>
+</html>
